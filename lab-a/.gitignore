@@ -1,1 +1,5 @@
 .idea
+Thumbs.db
+*.docx
+*.pdf
+.~lock.*
