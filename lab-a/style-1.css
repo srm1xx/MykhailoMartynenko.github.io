@@ -1,3 +1,140 @@
 body {
-  background-color: #dfecff;
+  background-color: #f4f1ea;
+  color: #1c1a17;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  line-height: 1.6;
+}
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('tlo.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  color: #ffffff;
+  padding: 30px 20px;
+  text-align: center;
+  border-bottom: 4px solid #c1121f;
+}
+
+.brand {
+  font-size: 26px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffffff;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+header nav a {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 5px 12px;
+  border-radius: 15px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+header nav a:hover {
+  background-color: #ffffff;
+  color: #c1121f;
+}
+
+main {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+article {
+  background-color: #ffffff;
+  padding: 30px;
+  border: 1px solid #d7cfc0;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+h1 {
+  font-size: 28px;
+  text-align: center;
+  color: #1c1a17;
+  border-bottom: 3px double #c1121f;
+  padding-bottom: 15px;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 20px;
+  color: #c1121f;
+  border-left: 5px solid #c1121f;
+  padding-left: 10px;
+  margin-top: 25px;
+}
+
+h3 {
+  font-size: 16px;
+  color: #3d3428;
+  margin-top: 20px;
+}
+
+p {
+  color: #5c564c;
+  margin-bottom: 15px;
+}
+
+article ul,
+article ol {
+  background-color: #efe8da;
+  border: 2px dashed #d7cfc0;
+  padding: 15px 15px 15px 30px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+article li {
+  margin-bottom: 5px;
+}
+
+footer {
+  background-color: #2b241c;
+  color: #f2ebe0;
+  text-align: center;
+  padding: 20px;
+  border-top: 6px solid #c1121f;
+  margin-top: 40px;
+}
+
+footer p {
+  color: #f2ebe0;
+  margin: 0;
+}
+
+@media (max-width: 375px) {
+  body {
+    font-size: 13px;
+  }
+  header {
+    padding: 15px 10px;
+  }
+  header nav ul {
+    flex-direction: column;
+    gap: 5px;
+  }
+  article {
+    padding: 15px;
+    border-radius: 0;
+  }
 }
