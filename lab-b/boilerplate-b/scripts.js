@@ -1,3 +1,4 @@
+/* Kod wygenerowany za pomocą sztucznej inteligencji */
 const todo = {
   tasks: [],
   term: '',
