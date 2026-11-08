@@ -3,11 +3,14 @@
 {% block title %}Edit Game{% endblock %}
 
 {% block body %}
-    <h1>Edit Game</h1>
+    <h1 class="page-title">Edit Game</h1>
 
-    {{ include('game/_form.html.twig', {'button_label': 'Update'}) }}
+    <div class="game-panel">
+        {{ include('game/_form.html.twig', {'button_label': 'Update'}) }}
+    </div>
 
-    <a href="{{ path('app_game_index') }}">back to list</a>
-
-    {{ include('game/_delete_form.html.twig') }}
+    <div class="game-actions mt-3">
+        <a class="btn btn-game-secondary" href="{{ path('app_game_index') }}">back to list</a>
+        {{ include('game/_delete_form.html.twig') }}
+    </div>
 {% endblock %}

@@ -3,9 +3,13 @@
 {% block title %}New Game{% endblock %}
 
 {% block body %}
-    <h1>Create new Game</h1>
+    <h1 class="page-title">Create new Game</h1>
 
-    {{ include('game/_form.html.twig') }}
+    <div class="game-panel">
+        {{ include('game/_form.html.twig') }}
+    </div>
 
-    <a href="{{ path('app_game_index') }}">back to list</a>
+    <div class="mt-3">
+        <a class="btn btn-game-secondary" href="{{ path('app_game_index') }}">back to list</a>
+    </div>
 {% endblock %}
